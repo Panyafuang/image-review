@@ -10,7 +10,7 @@ export class ClassDirective {
   /**
    * classObj:any = { disabled: currentPage === 0 }
    * key = disabled
-   * classObj[key] = true (value of key)
+   * classObj[key] = true, false (value of key)
    */
   @Input('appClass') set className(classObj: any) {
     for(let key in classObj) {
